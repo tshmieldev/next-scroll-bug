@@ -15,8 +15,9 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<Header />
+				<div className="h-[360px] bg-slate-500"></div>
 				{children}
+				{/* ^ this will be ->  <div className="h-[800px] mt-[400px] mb-[400px] bg-pink-400"></div> */}
 				<div>
 					<Link href="/">home</Link>
 					<Link href="/page2">page2</Link>
